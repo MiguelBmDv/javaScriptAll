@@ -1,0 +1,218 @@
+/* color de fondo */
+body {
+    background-color: rgb(255, 236, 224);
+}
+/* imagen de fondo */
+.fondoDif{
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/036/344/304/original/shin-diego-66.gif?1617396623'); 
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    animation: 6.5s cubic-bezier(.25, 1, .30, 1) circle-in-bottom-left both;
+}
+
+/* imagen de fondo 2 */
+.fondoDif2 {
+  background-image: url('https://i.pinimg.com/originals/da/dc/e9/dadce90550cfc17a01708d58db98a970.gif'); 
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  animation: diamond-in-hesitate 1.5s cubic-bezier(.25, 1, .30, 1) both;
+}
+
+.fondoRes {
+  background-image: url('https://i.ytimg.com/vi/06EkWSzT930/maxresdefault.jpg'); 
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  animation: square-in-hesitate 1.5s cubic-bezier(.35, 1, .50, 1) both;
+  align-items: center;
+}
+
+/*ANIMACIONES*/
+@keyframes circle-in-bottom-left {
+  from {
+    clip-path: circle(0%);
+  }
+  to {
+    clip-path: circle(150% at bottom);
+  }
+}
+@keyframes diamond-in-hesitate {
+  0% {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+  }
+  50% {
+    clip-path: polygon(45% 50%, 50% 25%, 55% 50%, 50% 75%);
+  }
+  100% {
+    clip-path: polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%);
+  }
+}
+
+@keyframes square-in-hesitate {
+  0% {
+    clip-path: inset(100% 100% 100% 100%);
+  }
+  40% {
+    clip-path: inset(33% 33% 33% 33%);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+
+
+
+@font-face {
+  font-family: 'Scary Halloween Font';
+  src: url('/resources/fuentes/Scary\ Halloween\ Font.ttf') format('truetype');
+}
+
+
+ /*  titulo */
+h1 {
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+    font-size: 40px;
+    color: rgb(255, 217, 0);
+    text-shadow: 2px 5px #000000;
+}
+/* titulo por encima */
+h1:hover{
+  transform: scale(1.1);
+}
+
+.resH1{
+  font-family: 'Scary Halloween Font', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(134, 19, 4);
+  text-shadow: 2px 5px #180101;
+}
+/* contenedor de base */
+.contenedor {
+  padding-top: 2px;
+  margin-left: 25%;
+  background-color: rgba(255, 250, 241, 0.753);
+  opacity: 87%;
+  width: 50%;
+  height: 575px;
+  border-radius: 10px;
+  margin-top: 15px;
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+.contenedor2 {
+  padding-top: 2px;
+  margin-left: 25%;
+  background-color: rgba(0, 0, 0, 0.753);
+  opacity: 87%;
+  width: 50%;
+  height: 575px;
+  border-radius: 10px;
+  margin-top: 15px;
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+.caja2 {
+  background-color: rgba(32, 29, 29, 0.479);
+  border-radius: 10px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+
+/* imagen por defecto */
+.poro{
+  width: 40%;
+  margin-top: -50%;
+  margin-left: -90%;
+  transition: transform 1s ease;
+}
+/* imagen por encima */
+.poro:hover{
+  transform: scale(1.2);
+}
+
+/* imagen por defecto */
+.teeimg{
+  width: 30%;
+  transition: transform 1s ease;
+}
+/* imagen teemo por encima */
+.teeimg:hover{
+  transform: scale(1.2);
+}
+
+/* imagen por defecto */
+.kyimg{
+  margin-top: 35px;
+  padding: 30px;
+  width: 60%;
+}
+/* imagen teemo por encima */
+.kyimg:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+  transform: scale(0.95);
+  background-color: #ffc4804b;
+  border-radius: 20px;
+}
+
+/* imagen por defecto */
+.poroimg{
+  width: 20%;
+  margin-top: 25px;
+;
+}
+/* imagen yummi por encima */
+.poroimg:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+  transform: scale(01.05);
+  background-color: #80f7ff27;
+  border-radius: 20px;
+}
+
+/* imagen por defecto */
+.fidimg{
+  width: 20%;
+  margin-top: 10px;
+;
+}
+/* imagen fiddle por encima */
+.fidimg:hover {
+  box-shadow: 0px 0px 10px rgba(3, 0, 0, 0.562);
+  transform: scale(01.05);
+  background-color: #ff808027;
+  border-radius: 20px;
+}
+#respuesta{
+  margin-top: 10px;
+  margin-left: 38%;
+  width: 25%;
+  height: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.541);
+  background-color: #ff898927;
+  border-radius: 20px;
+}
+.resultado {
+  font-family: cursive;
+  font-size: 18px;
+}
+
+

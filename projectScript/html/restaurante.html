@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/utilities.css">
+   
+    <title>Variados</title>
+</head>
+<body style="background-color: rgba(0, 5, 26, 0.911);">
+    <div class="fondoRes">
+        <audio src="/resources/terrorAmbiente.mp3" autoplay loop controls style="display: none; visibility: hidden;"></audio>
+        
+        <div class="contenedor2">
+             <!-- enlace con JavaScript -->
+            <script src="/js/restaurant.Js"></script>
+            <h1 class="resH1">La Posada Siniestra</h1>
+            <div class="todo">
+                <div class="caja2">
+                    <select class="formSelected2" " id="opc">
+                        <option selected>Entrada</option>
+                        <!-- Huevos de codorniz con salsa especial -->
+                        <option value="1">Ojos Sangrientos</option> 
+                        <!-- Aros de cebolla -->
+                        <option value="2">Aros de muerto</option>
+                        <!-- Dedos de queso -->
+                        <option value="3">Deditos de bruja</option>
+                    </select>
+                    <input type="number" id="cant" class="formControl2" placeholder="Cantidad"> <br>
+                    <select class="formSelected2"  id="opc2">
+                        <option selected>Bebidas</option>
+                        <!-- coctel -->
+                        <option value="1">Coctel fantasma</option>
+                        <!-- sangria -->
+                        <option value="2">Sangre de vampiro</option>
+                        <!-- agua -->
+                        <option value="3">Agua bendita</option>
+                    </select>
+                    <input type="number" id="cant2" class="formControl2" placeholder="Cantidad"> <br>
+                    <select class="formSelected2"  id="opc3">
+                        <option selected>Especiales del dia</option>
+                        <!-- Brochas de carne -->
+                        <option value="1">Ratas pinchadas</option>
+                        <!-- platillo con tofu -->
+                        <option value="2">Cerebro humano</option>
+                        <!-- hamburguesas -->
+                        <option value="3">Monsterguesa</option>
+                    </select>
+                    <input type="number" id="cant3" class="formControl2" placeholder="Cantidad"> <br>
+                <br>
+                    <button onclick="mostrar()" id="btnCal2">VALOR</button>
+                </div>
+            </div>
+                <div id="respuesta">
+                    <strong id="resultado"></strong>
+                </div>
+          
+            <img src="/resources/fiddle.gif" alt="" class="fidimg">
+            <!-- <form ><button class="back" formaction="/html/menu.html"> Volver </button></form>  -->
+        </div>  
+    </div>
+</body>
+</html>

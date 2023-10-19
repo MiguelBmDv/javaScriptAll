@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/utilities.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <title>Variados</title>
+</head>
+<body>
+    <div class="fondoDif2">
+        <iframe src="/html/music.html" frameborder="0" scrolling="no" ></iframe>
+        <div class="contenedor">
+             <!-- enlace con JavaScript -->
+            <script src="/js/newCalculator.js"></script>
+            <h1>CALCULADORA AVANZADA</h1>
+            <div class="todo">
+                <div class="caja">
+                    <input type="number" id="n1" class="formControl" placeholder="Numero 1"> <br>
+                    <input type="number" id="n2" class="formControl" placeholder="Numero 2"> <br>
+                    <select class="formSelected" aria-label="Default select example" id="opc">
+                        <option selected>Opcion</option>
+                        <option value="1">Sumar</option>
+                        <option value="2">Restar</option>
+                        <option value="3">Multiplicar</option>
+                        <option value="4">Dividir</option>
+                        <option value="5">Potencia del primer numero</option>
+                    </select>
+                <br>
+                    <button onclick="mostrar()" id="btnCal" class="btn btn-outline-dark">CALCULAR</button>
+                </div>
+            </div>
+                <div class="alert" role="alert" id="respuesta">
+                    <strong id="resultado"></strong>
+                    <!-- <button type="button" class="btnCal" data-bs-dismiss="alert" aria-label="close"></button> -->
+                </div>
+            
+            <img src="/resources/yuumig.gif" alt="" class="poroimg">
+            <form ><button class="back" formaction="/html/menu.html"> Volver </button></form> 
+        </div>
+    </div>
+</body>
+</html>
