@@ -1,3 +1,4 @@
+//creo funcion
 function mostrar() {
     event.preventDefault(); // Evita el recargue de la página
 
@@ -24,7 +25,7 @@ function mostrar() {
     let opc3 = parseInt(document.getElementById("opc3").value);
     // Variable para almacenar el resultado
     let resultado = 0;
-
+    //condicionar para que el resultado no vaya a dar error, asi no depende una opcion de la otra
     if ((cant > 0 && opc > 0) || (cant2 > 0 && opc2 > 0) || (cant3 > 0 && opc3 > 0)) {
         respuesta.style.display = "block";
 
@@ -60,6 +61,7 @@ function mostrar() {
                     alert(`Opción de bebida no válida`);
             }
         }
+        // Seleccionar el caso según la opción de platos
         if (cant3 > 0) {
             switch (opc3) {
                 case 1:
