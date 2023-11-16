@@ -86,7 +86,7 @@ a {
     text-decoration: none;
     color: rgb(255, 0, 0);
     font-family: 'Black Ops One', cursive;
-    font-size: 18px;
+    font-size: 19px;
     padding-left: 7px;
     text-shadow: 2px 3px #000000;
 }
@@ -162,10 +162,6 @@ audio {
     justify-content: center;
 }
 
-
-
-
-
 .formSelected2{
     width: 80%; 
     padding: 4px; 
@@ -198,4 +194,24 @@ audio {
 #btnCal2:hover{
     transform: scale(1.1);
     background-color: #006eff; 
+}
+
+
+.redSocial {
+    padding-left: 84%;
+    color: #006eff;
+
+}
+
+.sociaL{
+    font-size: 10px;
+}
+
+#resetear {
+    margin-bottom: 10px;
+}
+
+.botonC{
+    margin-top: 20px;
+    background-color: rgba(0, 255, 242, 0.89);
 }

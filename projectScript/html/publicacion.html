@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/utilities.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <title>LeagueOfChats</title>
+</head>
+<body>
+    <div class="fondoRedSocial">
+        <div class="contenedorRs">
+             <!-- enlace con JavaScript -->
+           
+            <h1 class="League">LeagueOfChats</h1>
+            <div class="padreP">
+                <div class="publicacion">
+                    <h5 class="Teemoxt">@Teemo :)</h5>
+                    <p class="textT">Un... Dos... Tres... cuatro <br> Que tal mi super cumbion, like si soy tierno.</p>
+                    <img src="/resources/teemog.gif" alt="" class="teeimg2">
+                    <br>
+                    <h2 style="text-align: center"><span id="valor">0</span></h2>
+                    <div class="botones">
+                        <button  type="button" id="incrementar" class="btn btn-outline-sucess col" onclick="incremento()">
+                            Like <i class="far fa-thumbs-up"></i>
+                        </button>
+                        <button type="button" id="restar" class="btn btn-outline-sucess col" onclick="decremento()">
+                            Dislike <i class="far fa-thumbs-down"></i>
+                        </button>
+                    </div>
+                    <br>
+                    <!-- <button type="button" onclick="resetear()" id="resetear" class="btn btn-outline-sucess col"> Reset <i class="far fa-broom"></i></button> -->
+                </div>
+            </div>
+
+            <div >
+                <br>
+                <h1 class="League">MarketLeague</h1>
+                <div>
+                    <h5 class="txt">LibroPython</h5>
+                    <div class="lineSup">
+                        <img class="productos" src="https://ellibrodepython.com/assets/images/el-libro-de-python.png" alt="">
+                        <p>Cantidad</p>
+                        <p>Valor Total</p>
+                    </div>
+                        <div class="line">
+                            <button class="botonC" type="button" onclick="resetear()" id="resetear" class="btn btn-outline-sucess col"> <i class="far fa-broom"></i></button>
+
+                            <button  class="botonC" type="button" id="incrementar" class="btn btn-outline-sucess col" onclick="incremento()">+</button>
+                            <button class="botonC" type="button" id="restar" class="btn btn-outline-sucess col" onclick="decremento()">-</button>
+                        </div>
+                    <br>
+                    <h5 class="txt">La Rebelion del Teemo</h5>
+                    <div class="lineSup">
+                        <img class="productos" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK3g03TvLOQSEHdCMlkUNL9LIA1F7UqG9r_J3NquFG_iM31b0pHnH63qbZm3E8qmSpXPo&usqp=CAU" alt="">
+                        <p>Cantidad</p>
+                        <p>Valor Total</p>
+                    </div>
+                    <div class="line">
+                        <button class="botonC" type="button" onclick="resetear()" id="resetear" class="btn btn-outline-sucess col"> <i class="far fa-broom"></i></button>
+
+                        <button  class="botonC" type="button" id="incrementar" class="btn btn-outline-sucess col" onclick="incremento()">+</button>
+                        <button class="botonC" type="button" id="restar" class="btn btn-outline-sucess col" onclick="decremento()">-</button>
+                    </div>
+                </div>
+            </div>
+            
+            <form ><button class="back" formaction="/html/menu.html"> Volver </button></form> 
+        </div>
+    </div>
+    <script src="/js/like.js"></script>
+</body>
+</html>

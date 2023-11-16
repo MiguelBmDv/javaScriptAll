@@ -35,6 +35,19 @@ body {
   align-items: center;
 }
 
+.fondoRedSocial {
+  background-image: url('https://i.pinimg.com/originals/94/e9/dd/94e9dd53e6bb0670e2594c4299876afb.jpg'); 
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-down both;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 /*ANIMACIONES*/
 @keyframes circle-in-bottom-left {
   from {
@@ -56,6 +69,16 @@ body {
   }
 }
 
+@keyframes wipe-in-down {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+
 @keyframes square-in-hesitate {
   0% {
     clip-path: inset(100% 100% 100% 100%);
@@ -67,9 +90,6 @@ body {
     clip-path: inset(0 0 0 0);
   }
 }
-
-
-
 
 @font-face {
   font-family: 'Scary Halloween Font';
@@ -90,6 +110,12 @@ h1:hover{
   transform: scale(1.1);
 }
 
+.League {
+  font-family:  cursive;
+  color: rgb(0, 132, 255);
+}
+
+
 .resH1{
   font-family: 'Scary Halloween Font', sans-serif;
   text-align: center;
@@ -105,6 +131,21 @@ h1:hover{
   opacity: 87%;
   width: 50%;
   height: 575px;
+  border-radius: 10px;
+  margin-top: 15px;
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.contenedorRs {
+  padding-top: 2px;
+  margin-left: 25%;
+  background-color: rgba(255, 250, 241, 0.753);
+  opacity: 87%;
+  width: 52%;
+  height: 100%;
   border-radius: 10px;
   margin-top: 15px;
   text-align: center;
@@ -156,6 +197,19 @@ h1:hover{
 }
 /* imagen teemo por encima */
 .teeimg:hover{
+  transform: scale(1.2);
+}
+
+/* imagen por defecto */
+.teeimg2{
+  width: 30%;
+  transition: transform 1s ease;
+  background-color: rgba(117, 255, 129, 0.801);
+  box-shadow: 0px 0px 10px rgba(3, 0, 0, 0.562);
+  margin-bottom: 25px;
+}
+/* imagen teemo por encima */
+.teeimg2.kyimg{
   transform: scale(1.2);
 }
 
@@ -215,5 +269,46 @@ h1:hover{
   font-family: cursive;
   font-size: 18px;
 }
+.padreP{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.publicacion{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  transition: transform 1s ease;
+  background-color: rgb(238, 238, 238);
+  box-shadow: 0px 0px 10px rgba(3, 0, 0, 0.562);
+}
 
+.Teemoxt {
+  text-align: left;
+  color: rgb(255, 255, 255) ;
+  background-color: rgb(0, 0, 0);
+  font-size: 17px;
+}
 
+.textT {
+  margin-top: -10px;
+  padding-left: 5px;
+  text-align: left;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.89);
+}
+.lineSup {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+}
+
+.lineSup p{
+  margin-left: 45px;
+}
+
+.productos {
+  width: 25%;
+}
