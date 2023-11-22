@@ -11,7 +11,7 @@ function sumar(n1,n2){
       
     }
 }
-
+// Funcion para restar segun los parametros entregados
 function restar(n1,n2){
     var res=document.getElementById("resultado")
     var resultado = n1 - n2;
@@ -19,18 +19,21 @@ function restar(n1,n2){
         res.innerHTML=`Total : ${resultado}`;
     
 }
+//Funcion para multiplicar segun los parametros entregados
 function multiplicar(n1,n2){
     var res=document.getElementById("resultado")
     var resultado = n1 * n2;
     respuesta.style.display="block";
     res.innerHTML=`Total : ${resultado}`;
 }
+//Funcion para dividir segun los parametros entregados
 function dividir(n1,n2){
     var res=document.getElementById("resultado")
     var resultado = n1 / n2;
     respuesta.style.display="block";
     res.innerHTML=`Total : ${resultado}`;
 }
+//Funcion para potenciar segun los parametros entregados
 function potencia(n1,n1){
     var res=document.getElementById("resultado")
     var resultado = n1 * n1;
