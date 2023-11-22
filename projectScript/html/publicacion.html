@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/utilities.css">
+    <link rel="stylesheet" href="/styles/stylePubli.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
@@ -15,17 +16,35 @@
 </head>
 <body>
     <div class="fondoRedSocial">
+        <aside class="aside-left">
+            <div class="publicacion-lateral">
+                <h3>Nueva publicacion de @teemo <br> MIRALO YA!</h3>
+                <img src="/resources/publiTeemo.PNG" alt="Publicación 1">
+                <p>Teemo destrozando la grieta con su gran cumbion insolito</p>
+            </div>
+        
+            <div class="publicacion-lateral">
+                <h3>Nueva mercancia en la MarketLeague</h3>
+                <img src="/resources/market.PNG" alt="Publicación 2">
+                <p>Programa con ayuda del primo de teemo, con su Libro de Python, o sumergete en las aventuras de la rebelion de teemo</p>
+            </div>
+        
+            <!-- Agrega más publicaciones o anuncios según sea necesario -->
+        </aside>
+        
         <div class="contenedorRs">
              <!-- enlace con JavaScript -->
            
             <h1 class="League">LeagueOfChats</h1>
             <div class="padreP">
                 <div class="publicacion">
-                    <h5 class="Teemoxt">@Teemo :)</h5>
-                    <p class="textT">Un... Dos... Tres... cuatro <br> Que tal mi super cumbion, like si soy tierno.</p>
-                    <img src="/resources/teemog.gif" alt="" class="teeimg2">
-                    <br>
-                    <h2 style="text-align: center"><span id="valor">0</span></h2>
+                    <h5 class="Teemoxt">@Teemo</h5>
+                    <div class="contP">
+                        <p class="textT" style="color: black;">Un... Dos... Tres... cuatro <br> Que tal mi super cumbion, like si soy tierno.</p>
+                        <img src="/resources/teemog.gif" alt="" class="teeimg2">
+                        <br>
+                        <h2 style="text-align: center"><span id="valor">0</span></h2>
+                    </div>  
                     <div class="botones">
                         <button  type="button" id="incrementar" class="btn btn-outline-sucess col" onclick="incremento()">
                             Like <i class="far fa-thumbs-up"></i>
@@ -35,7 +54,7 @@
                         </button>
                     </div>
                     <br>
-                    <!-- <button type="button" onclick="resetear()" id="resetear" class="btn btn-outline-sucess col"> Reset <i class="far fa-broom"></i></button> -->
+                    <button type="button" onclick="resetear()" id="resetear" class="btn btn-outline-sucess col"> Reset<i class="far fa-broom"></i></button>
                 </div>
             </div>
 
@@ -43,37 +62,100 @@
                 <br>
                 <h1 class="League">MarketLeague</h1>
                 <div>
-                    <h5 class="txt">LibroPython</h5>
-                    <div class="lineSup">
+
+                    <h5 class="txt">El libro de Python</h5>
+                    <div class="productos-container">
                         <img class="productos" src="https://ellibrodepython.com/assets/images/el-libro-de-python.png" alt="">
-                        <p>Cantidad</p>
-                        <p>Valor Total</p>
-                    </div>
-                        <div class="line">
-                            <button class="botonC" type="button" onclick="resetear()" id="resetear" class="btn btn-outline-sucess col"> <i class="far fa-broom"></i></button>
-
-                            <button  class="botonC" type="button" id="incrementar" class="btn btn-outline-sucess col" onclick="incremento()">+</button>
-                            <button class="botonC" type="button" id="restar" class="btn btn-outline-sucess col" onclick="decremento()">-</button>
+                        <div class="lineSup">
+                            <p>Precio x unidad <br> $ 12.500</p>
+                            <p>Cantidad</p>
+                            <p style="text-align: left"><span id="cantidadLibroPython">0</span></p>
+                            <p>Valor Total</p>
+                            <p style="text-align: left"><span id="valorTLibroPython">0</span></p>
+                            <div class="line">
+                            <button class="botonC" type="button" onclick="resetearC('LibroPython')" class="btn btn-outline-sucess col">
+                                <i class="far fa-broom"></i>
+                            </button>
+                            <button class="botonC" type="button" id="incrementarLibroPython" class="btn btn-outline-sucess col" onclick="incrementoC('LibroPython',12500)">+</button>
+                            <button class="botonC" type="button" id="restarLibroPython" class="btn btn-outline-sucess col" onclick="decrementoC('LibroPython',12500)">-</button>
+                            </div>
                         </div>
-                    <br>
-                    <h5 class="txt">La Rebelion del Teemo</h5>
-                    <div class="lineSup">
-                        <img class="productos" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK3g03TvLOQSEHdCMlkUNL9LIA1F7UqG9r_J3NquFG_iM31b0pHnH63qbZm3E8qmSpXPo&usqp=CAU" alt="">
-                        <p>Cantidad</p>
-                        <p>Valor Total</p>
                     </div>
-                    <div class="line">
-                        <button class="botonC" type="button" onclick="resetear()" id="resetear" class="btn btn-outline-sucess col"> <i class="far fa-broom"></i></button>
+                    <h5 class="txt">Ruination Novela</h5>
+                    <div class="productos-container">
+                        <img class="productos" src="https://imagen.nextn.es/wp-content/uploads/2022/07/Ruination-a-League-of-Legends-novel.jpg" alt="">
 
-                        <button  class="botonC" type="button" id="incrementar" class="btn btn-outline-sucess col" onclick="incremento()">+</button>
-                        <button class="botonC" type="button" id="restar" class="btn btn-outline-sucess col" onclick="decremento()">-</button>
+                        <div class="lineSup">
+                            <p>Precio x unidad <br> $ 25.000</p>
+                            <p>Cantidad</p>
+                            <p style="text-align: left"><span id="cantidadRuination">0</span></p>
+                            <p>Valor Total</p>
+                            <p style="text-align: left"><span id="valorTRuination">0</span></p>
+                            <div class="line">
+                                <button class="botonC" type="button" onclick="resetearC('Ruination')" class="btn btn-outline-sucess col">
+                                    <i class="far fa-broom"></i>
+                                </button>
+                                <button class="botonC" type="button" id="incrementarRuination" class="btn btn-outline-sucess col" onclick="incrementoC('Ruination', 25000)">+</button>
+                                <button class="botonC" type="button" id="restarRuination" class="btn btn-outline-sucess col" onclick="decrementoC('Ruination', 25000)">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="txt">Figura de Teemo explorador</h5>
+                    <div class="productos-container">
+                        <img class="productos" src="https://media.karousell.com/media/photos/products/2023/5/30/___popmart_lol_teemo___1685465058_6a7bc67d_progressive.jpg" alt="">
+                        <div class="lineSup">
+                            <p>Precio x unidad <br> $ 45.000</p>
+                            <p>Cantidad</p>
+                            <p style="text-align: left"><span id="cantidadTeemoE">0</span></p>
+                            <p>Valor Total</p>
+                            <p style="text-align: left"><span id="valorTTeemoE">0</span></p>
+                            <div class="line">
+                                <button class="botonC" type="button" onclick="resetearC('TeemoE')" class="btn btn-outline-sucess col">
+                                    <i class="far fa-broom"></i>
+                                </button>
+                                <button class="botonC" type="button" id="incrementarTeemoE" class="btn btn-outline-sucess col" onclick="incrementoC('TeemoE', 45000)">+</button>
+                                <button class="botonC" type="button" id="restarTeemoE" class="btn btn-outline-sucess col" onclick="decrementoC('TeemoE', 45000)">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="txt">La rebelion de teemo</h5>
+                    <div class="productos-container">
+                        <img class="productos" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK3g03TvLOQSEHdCMlkUNL9LIA1F7UqG9r_J3NquFG_iM31b0pHnH63qbZm3E8qmSpXPo&usqp=CAU" alt="">
+
+                        <div class="lineSup">
+                            <p>Precio x unidad <br> $ 15.000</p>
+                            <p>Cantidad</p>
+                            <p style="text-align: left"><span id="cantidadTeemo">0</span></p>
+                            <p>Valor Total</p>
+                            <p style="text-align: left"><span id="valorTTeemo">0</span></p>
+                            <div class="line">
+                                <button class="botonC" type="button" onclick="resetearC('Teemo')" class="btn btn-outline-sucess col">
+                                    <i class="far fa-broom"></i>
+                                </button>
+                                <button class="botonC" type="button" id="incrementarTeemo" class="btn btn-outline-sucess col" onclick="incrementoC('Teemo', 15000)">+</button>
+                                <button class="botonC" type="button" id="restarTeemo" class="btn btn-outline-sucess col" onclick="decrementoC('Teemo', 15000)">-</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
             <form ><button class="back" formaction="/html/menu.html"> Volver </button></form> 
         </div>
+        <aside class="aside-right">
+            <div class="publicacion-lateral">
+                <h3>Consigue skins gratuitas <br> no te quedes sin una!!</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyHuT7UJ6sXnnyiexcwccCbqWfB271yzoLPg&usqp=CAU" alt="Publicación 1">
+                <p>Descubre como conseguir accesorios y mas en la MarketLeague</p>
+                <img src="https://theglobalgaming.com/assets/images/thumbnails/_800x418_crop_center-center_82_none/62f3ceb186b43340bdc22be2_how20to20change20ward20skins.jpeg?mtime=1662333328" alt="">
+                <br>
+                <br>
+                <img src="https://media.comicbook.com/2018/07/league-of-legends-teemo-figure-1121550.jpeg" alt="">
+                <br>
+                <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqQR29dUuGrQGay9Nl08i97dstKVZ-cdl2tZmXJIsodHqdb5Rj-Yeu-CQ0nimqisfYdWg&usqp=CAU" alt="">
+            </div>
+        </aside>
     </div>
-    <script src="/js/like.js"></script>
+    <script src="/js/likeYCarrito.js"></script>
 </body>
 </html>

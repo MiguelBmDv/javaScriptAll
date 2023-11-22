@@ -1,0 +1,264 @@
+.fondoRedSocial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-image: url('https://nexus.leagueoflegends.com/wp-content/uploads/2019/10/Banner_Preseason-1_dwfwpnp0byzkpe2hk65v.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding-top: 10px;
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-down both;
+  
+}
+
+.aside-left,
+.aside-right {
+  width: 22%;
+  max-height: 97vh;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.856);
+  border-radius: 10px;
+  overflow-y: scroll;  
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  direction: ltr;
+  color: rgb(0, 0, 0);
+  &::-webkit-scrollbar {
+    width: 0.3em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(133, 133, 133, 0.815)
+  }
+
+}
+
+.aside-left:hover,
+.aside-right:hover {
+  scrollbar-color: #ccc transparent;
+}
+
+.aside-left{
+  direction: rtl;
+}
+.aside-right {
+  right: 0;
+  left: auto;
+}
+
+.contenedorRs {
+  flex: 1;
+  max-width: 52%;
+  max-height: 97vh;  
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.884);
+  background-image: url("https://i.pinimg.com/originals/f2/8b/71/f28b71ea2aee760b9a726d62982189df.jpg");
+  color: rgb(187, 250, 245);
+  margin-bottom: 10px;
+  overflow-y: scroll;  
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  &::-webkit-scrollbar {
+    width: 0.5em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 105, 16, 0.815)
+  }
+}
+
+.contenedorRs:hover {
+  scrollbar-color: #ccc transparent;
+}
+
+
+@keyframes wipe-in-down {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* imagen por defecto */
+.teeimg2{
+  width: 60%;
+  transition: transform 1s ease;
+  box-shadow: 0px 0px 10px rgb(0, 56, 56);
+  margin-bottom: 25px;
+}
+/* imagen teemo por encima */
+.teeimg2.kyimg{
+  transform: scale(1.2);
+}
+
+/* Estilos generales */
+.publicacion {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgba(251, 255, 251, 0.034) ;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
+}
+
+/* Estilos para el nombre de usuario */
+.Teemoxt {
+  color: #4CAF50; /* Verde */
+  font-size: 18px;
+  margin-bottom: 10px;
+  background-color: black;
+}
+
+/* Estilos para el texto de la publicación */
+.txt {
+  font-size: 19px;
+  color: rgb(245, 241, 13);
+  margin-top: 25px;
+}
+
+/* Estilos para el contador de likes/dislikes */
+#valor {
+  color: rgb(5, 250, 13); /* Verde */
+  font-size: 26px;
+}
+
+/* Estilos para los botones de like/dislike */
+.botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 13px;
+  color: #fbfffb !important;
+}
+
+.btn-outline-success {
+  border: 1px solid #4CAF50; /* Borde verde */
+  
+}
+
+/* Estilos adicionales si los botones tienen iconos */
+.btn i {
+  margin-right: 8px;
+  color: rgb(7, 241, 97);
+}
+
+.padreP{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3{
+  text-align: center;
+}
+
+
+.contenedorRs:hover {
+  scrollbar-color: #ccc transparent; /* Cambia el color al hacer hover */
+}
+
+.lineSup {
+  display: grid;
+  justify-content: center;
+
+}
+
+.lineSup p{
+  margin-left: 45px;
+  text-align: left;
+  font-size: 18px;
+}
+
+
+.productos-container {
+  display: flex;
+  align-items: center; /* Alinea verticalmente */
+  justify-content: center;
+}
+
+.productos {
+  width: 185px;
+  height: 185px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.815);
+  transition: transform 0.3s ease-in-out;
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.line{
+  margin-left: 20px;
+  margin-bottom: -10px;
+}
+.productos:hover {
+  transform: scale(1.1); /* Escala ligeramente al hacer hover */
+}
+
+
+.sociaL{
+font-size: 10px;
+}
+
+#resetear {
+margin-bottom: 10px;
+}
+
+.botonC{
+font-size: 13px;
+background-color: rgba(0, 255, 242, 0.89);
+}
+
+.contP {
+background-color: rgb(238, 238, 238);
+background-image: url('https://nexus.leagueoflegends.com/wp-content/uploads/2019/12/01_Preseason_2020_Login-Screen_6ry8y3zwgus96qrgg1b4.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 7px;
+margin-top: -10px;
+}
+
+#resetear {
+font-size: 13px;
+margin-top: -25px;
+}
+
+
+
+/* Estilo para publicaciones o anuncios laterales */
+.publicacion-lateral {
+  border: 1px solid #092c00;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.publicacion-lateral h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.publicacion-lateral img {
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  
+}
+
+.publicacion-lateral img:hover {
+  transform: scale(1.02); /* Escala ligeramente al hacer hover */
+}
+
+.publicacion-lateral p{
+  text-align: center;
+}

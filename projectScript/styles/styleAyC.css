@@ -1,0 +1,131 @@
+
+/* imagen de fondo 2 */
+.fondoDif2 {
+    background-image: url('https://i.pinimg.com/originals/da/dc/e9/dadce90550cfc17a01708d58db98a970.gif'); 
+    width: 100%;
+    min-height: 92vh;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    animation: diamond-in-hesitate 1.5s cubic-bezier(.25, 1, .30, 1) both;
+  }
+
+  @keyframes diamond-in-hesitate {
+    0% {
+      clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+    }
+    50% {
+      clip-path: polygon(45% 50%, 50% 25%, 55% 50%, 50% 75%);
+    }
+    100% {
+      clip-path: polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%);
+    }
+  }
+
+  
+.todo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.formSelected2{
+    width: 80%; 
+    padding: 4px; 
+    border: 2px solid #ffffff9d; 
+    border-radius: 5px; 
+    background-color: #2222228e; 
+    color: #fff;
+}
+.formControl2 {
+    margin: 10px 0;
+    width: 76%; 
+    padding: 4px; 
+    border: 2px solid #ffffff9d; 
+    border-radius: 5px; 
+    background-color: #2222228e; 
+    color: #fff;
+}
+.formSelected2:hover {
+    transform: scale(1.1);
+}
+
+.formControl {
+    width: 75%;
+    font-family: cursive;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+.formSelected {
+    margin-top: 20px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.548);
+    border-radius: 10px;
+    border-color: black;
+    transition: transform 1s ease;
+}
+
+.formSelected:hover {
+    transform: scale(1.1);
+}
+
+
+#btnCal{
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(127, 255, 212);
+    border-radius: 10px;
+    font-family: cursive;
+    text-align: center;
+    font-size: 18px;
+    transition: transform 1s ease;
+}
+#btnCal:hover{
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(127, 255, 212, 0.897);
+    border-radius: 10px;
+    color: rgb(124, 0, 0);
+    transform: scale(1.1);
+}
+
+
+#btnCal2 {
+    background-color: #ff6600; 
+    color: #fff; 
+    padding: 10px 50px;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+}
+#btnCal2:hover{
+    transform: scale(1.1);
+    background-color: #006eff; 
+}
+
+/* imagen por defecto */
+.poroimg{
+    width: 20%;
+    margin-top: 25px;
+  ;
+  }
+  /* imagen yummi por encima */
+  .poroimg:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+    transform: scale(01.05);
+    background-color: #80f7ff27;
+    border-radius: 20px;
+  }
+  

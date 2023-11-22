@@ -87,8 +87,14 @@ a {
     color: rgb(255, 0, 0);
     font-family: 'Black Ops One', cursive;
     font-size: 19px;
-    padding-left: 7px;
+    padding-left: 20px;
     text-shadow: 2px 3px #000000;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content:end;
+    margin-right: 15px;
+    margin-top: 20px;
 }
 
 /* Estilo para el reproductor de audio */
@@ -108,110 +114,3 @@ audio {
     padding-left: 5px;
 }
 
-.formControl {
-    width: 75%;
-    font-family: cursive;
-    text-align: center;
-    font-size: 15px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 3px;
-}
-
-.formSelected {
-    margin-top: 20px;
-    width: 100%;
-    color: rgb(0, 0, 0);
-    font-family: cursive;
-    text-align: center;
-    font-size: 15px;
-    background-color: rgba(255, 255, 255, 0.548);
-    border-radius: 10px;
-    border-color: black;
-    transition: transform 1s ease;
-}
-
-.formSelected:hover {
-    transform: scale(1.1);
-}
-
-#btnCal{
-    margin-top: 5px;
-    width: 100%;
-    height: 30px;
-    background-color: rgb(127, 255, 212);
-    border-radius: 10px;
-    font-family: cursive;
-    text-align: center;
-    font-size: 18px;
-    transition: transform 1s ease;
-}
-#btnCal:hover{
-    margin-top: 5px;
-    width: 100%;
-    height: 30px;
-    background-color: rgba(127, 255, 212, 0.897);
-    border-radius: 10px;
-    color: rgb(124, 0, 0);
-    transform: scale(1.1);
-}
-
-.todo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.formSelected2{
-    width: 80%; 
-    padding: 4px; 
-    border: 2px solid #ffffff9d; 
-    border-radius: 5px; 
-    background-color: #2222228e; 
-    color: #fff;
-}
-.formControl2 {
-    margin: 10px 0;
-    width: 76%; 
-    padding: 4px; 
-    border: 2px solid #ffffff9d; 
-    border-radius: 5px; 
-    background-color: #2222228e; 
-    color: #fff;
-}
-.formSelected2:hover {
-    transform: scale(1.1);
-}
-
-#btnCal2 {
-    background-color: #ff6600; 
-    color: #fff; 
-    padding: 10px 50px;
-    border: none; 
-    border-radius: 5px;
-    cursor: pointer; 
-}
-#btnCal2:hover{
-    transform: scale(1.1);
-    background-color: #006eff; 
-}
-
-
-.redSocial {
-    padding-left: 84%;
-    color: #006eff;
-
-}
-
-.sociaL{
-    font-size: 10px;
-}
-
-#resetear {
-    margin-bottom: 10px;
-}
-
-.botonC{
-    margin-top: 20px;
-    background-color: rgba(0, 255, 242, 0.89);
-}
