@@ -35,42 +35,72 @@ function resetear(){
 
 //Aqui se hace una funcion similar pero esta va para el carrito de compras, donde se necesitan de dos parametros el productor y el valor de este, donde dependiendo de su valor, avanzara a partir de la cantidad
 
-
+let valoresTotales = {};
 //Funcion que incrementa
 function incrementoC(producto, valorProducto) {
     const cantidadElement = document.getElementById(`cantidad${producto}`);
     const valorTElement = document.getElementById(`valorT${producto}`);
-    let contador = parseInt(cantidadElement.innerHTML, 10) + 1;
+    let contador = parseInt(cantidadElement.innerHTML) + 1;
 
     cantidadElement.innerHTML = contador;
 
-    if (contador > 0) {
-        valorCompra = contador * valorProducto;
-        valorTElement.innerHTML = valorCompra;
-    }
+    if (valoresTotales[producto] === undefined) {
+        valoresTotales[producto] = 0;
+      }
+  
+      valoresTotales[producto] += valorProducto; 
+      valorTElement.innerHTML = valoresTotales[producto].toFixed(2);
 }
 
 //Funcion que decrementa
 function decrementoC(producto, valorProducto) {
     const cantidadElement = document.getElementById(`cantidad${producto}`);
     const valorTElement = document.getElementById(`valorT${producto}`);
-    let contador = parseInt(cantidadElement.innerHTML, 10);
+    let contador = parseInt(cantidadElement.innerHTML);
 
     if (contador > 0) {
-        contador -= 1;
-        cantidadElement.innerHTML = contador;
-        valorCompra = valorCompra - valorProducto;
-        valorTElement.innerHTML = valorCompra;
+      contador -= 1;
+      cantidadElement.innerHTML = contador;
+      // Verificar si ya hay un valor total almacenado para este producto
+      if (valoresTotales[producto] === undefined) {
+        valoresTotales[producto] = 0;
+      }
+      valoresTotales[producto] -= valorProducto; // Restar al valor total
+      valorTElement.innerHTML = valoresTotales[producto].toFixed(2);
     } else {
-        contador = 0;
-        cantidadElement.innerHTML = contador;
+      contador <= 0;
+      cantidadElement.innerHTML = contador;
+      valorTElement.innerHTML = 0;
     }
-}
+  }
 
-//Funcion que resetea
+// Función que resetea
 function resetearC(producto) {
     const cantidadElement = document.getElementById(`cantidad${producto}`);
     const valorTElement = document.getElementById(`valorT${producto}`);
+  
+    if (valoresTotales[producto] === undefined) {
+      valoresTotales[producto] = 0;
+    }
+    valoresTotales[producto] -= parseFloat(valorTElement.innerHTML); 
     cantidadElement.innerHTML = 0;
     valorTElement.innerHTML = 0;
-}
+  }
+
+
+
+
+  // Función para realizar la compra
+  function comprar() {
+    let totalCompra = 0;
+
+    // Sumar todos los valores totales
+    for (const producto in valoresTotales) {
+      totalCompra += valoresTotales[producto];
+    }
+
+    alert(`Compra realizada con éxito. Total: $${totalCompra.toFixed(2)}`);
+    resetearC()
+
+    valoresTotales = {};
+  }
